@@ -1,4 +1,140 @@
 @charset "UTF-8";
+/* estilo para el index que se encuentra todo cn bootstrap */
+.menu-header {
+  background-color: #F3EFEE; }
+  .menu-header #navbarSupportedContent .navbar-nav .nav-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #F3EFEEe3, #dbcbbd);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 500ms;
+    padding: 5px 5px; }
+    .menu-header #navbarSupportedContent .navbar-nav .nav-item:hover {
+      background-size: 100% 100%;
+      background-position-x: left; }
+    .menu-header #navbarSupportedContent .navbar-nav .nav-item .navbar-color {
+      color: #6E2D0F !important; }
+
+.main-index {
+  /*tamaño de las imagenes*/ }
+  .main-index div .estilo-text-h1, .main-index div .estilo-text-h2 {
+    background-color: #F3EFEE;
+    color: #6E2D0F;
+    background-image: linear-gradient(#F3EFEE, #dbcbbd); }
+  .main-index .color-info-main {
+    background-color: #F3EFEE;
+    color: #6E2D0F; }
+  .main-index .carousel-control-prev-icon, .main-index .carousel-control-next-icon {
+    background-color: #a69a90;
+    border-radius: 50%; }
+  .main-index .transforma-imagen {
+    transition: transform .75s;
+    inset: 0;
+    object-fit: cover; }
+  .main-index .estilo-imagen-producto:hover {
+    transform: scale(1.05); }
+
+.footer-general .div-footer {
+  background-color: #F3EFEE; }
+  .footer-general .div-footer .div-contacto .estilo-contacto {
+    color: #6E2D0F; }
+  .footer-general .div-footer .div-contacto .estilo-text-h3 {
+    font-size: 1rem; }
+  .footer-general .div-footer .div-contacto .estilo-p-telefono,
+  .footer-general .div-footer .div-contacto .estilo-p-direccion {
+    font-size: 0.7rem; }
+  .footer-general .div-footer .div-contacto .estilo-a-mail {
+    font-size: 0.7rem;
+    color: #6E2D0F !important;
+    text-decoration: none; }
+  .footer-general .div-footer .div_redes .estilo-a-imagen-footer {
+    text-decoration: none; }
+  .footer-general .div-footer .div-derechos .estilo-text-h4 {
+    background-color: #F3EFEE;
+    color: #6E2D0F;
+    font-size: 0.7rem;
+    background-image: linear-gradient(#F3EFEE, #dbcbbd); }
+
+/*media query */
+@media screen and (min-width: 320px) {
+  .main-index {
+    /* aparecer del titulo de bienvenida */ }
+    .main-index .estilo-titulo-index {
+      font-family: "Open Sans", sans-serif;
+      color: #6E2D0F;
+      text-align: center;
+      font-size: 1.4rem;
+      background-image: linear-gradient(#F3EFEE, #dbcbbd);
+      padding: 4px;
+      text-transform: uppercase;
+      animation-name: aparecer;
+      animation-duration: 2s; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+    .main-index .estilo-imagen-producto {
+      width: 8rem; }
+    .main-index .card-title, .main-index .card-text {
+      font-size: 0.7rem; }
+    .main-index .img-info {
+      width: 4rem; } }
+
+/*media query */
+@media screen and (min-width: 768px) {
+  .main-index {
+    /* aparecer del titulo de bienvenida */ }
+    .main-index .estilo-titulo-index {
+      font-family: "Open Sans", sans-serif;
+      color: #6E2D0F;
+      text-align: center;
+      font-size: 2rem;
+      background-image: linear-gradient(#F3EFEE, #dbcbbd);
+      padding: 4px;
+      text-transform: uppercase;
+      animation-name: aparecer;
+      animation-duration: 2s; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+    .main-index .estilo-imagen-producto {
+      width: 12rem; }
+    .main-index .card-title, .main-index .card-text {
+      font-size: 1rem; }
+    .main-index .img-info {
+      width: 6rem; } }
+
+/*media query */
+@media screen and (min-width: 1024px) {
+  .main-index {
+    /* aparecer del titulo de bienvenida */ }
+    .main-index .estilo-titulo-index {
+      font-family: "Open Sans", sans-serif;
+      color: #6E2D0F;
+      text-align: center;
+      font-size: 2.2rem;
+      background-image: linear-gradient(#F3EFEE, #dbcbbd);
+      padding: 1px;
+      text-transform: uppercase;
+      animation-name: aparecer;
+      animation-duration: 2s; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+    .main-index .estilo-imagen-producto {
+      width: 18rem; }
+    .main-index .card-title, .main-index .card-text {
+      font-size: 1rem; }
+    .main-index .img-info {
+      width: 6rem; } }
+
 /*media query */
 @media screen and (min-width: 320px) {
   .mainProducto, .mainPreguntas, .mainNosotros, .mainComun {
@@ -6,9 +142,9 @@
     /* animacion de los titulos y propiedades*/ }
     .mainProducto div .mainTitulo, .mainPreguntas div .mainTitulo, .mainNosotros div .mainTitulo, .mainComun div .mainTitulo {
       font-family: "Open Sans", sans-serif;
-      font-size: 1.4rem;
       color: #6E2D0F;
       text-align: center;
+      font-size: 1.4rem;
       background-image: linear-gradient(#F3EFEE, #dbcbbd);
       padding: 4px;
       text-transform: uppercase;
@@ -49,10 +185,10 @@
           object-fit: cover; }
         .mainProducto .sProdDest .divProd2 .divProducDest2 .hDesc {
           font-family: "Open Sans", sans-serif;
-          font-size: 0.8rem;
           color: #6E2D0F;
           text-align: left;
-          width: 100px;
+          font-size: 0.8rem;
+          width: 100%;
           height: 50px;
           overflow: hidden; }
   .mainPreguntas .fotosPreguntasF {
@@ -70,7 +206,7 @@
         box-shadow: 5px 5px 10px #0c0c0cc4;
         border: 0px; }
       .mainPreguntas .fotosPreguntasF div:hover {
-        transform: scale(1.05); }
+        filter: opacity(0.5); }
   .mainPreguntas .sNosotros {
     padding: 20px; }
     .mainPreguntas .sNosotros .sectionMainOl {
@@ -84,8 +220,8 @@
         .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .sectionMainH2 {
           font-family: "Open Sans", sans-serif;
           color: #6E2D0F;
-          padding-top: 1%;
           text-align: center;
+          padding-top: 1%;
           font-size: 1.2rem; }
         .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .sectionMainPar {
           font-family: "Open Sans", sans-serif;
@@ -97,17 +233,15 @@
           list-style: none;
           font-family: "Open Sans", sans-serif;
           color: #6E2D0F;
-          padding: 0;
           text-align: center;
+          padding: 0;
           font-size: 0.9rem; }
   .mainNosotros {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1.8fr 1fr;
+    grid-template-columns: 1fr 0fr;
+    grid-template-rows: 0.1fr 1fr;
     gap: 0px 0px;
-    grid-template-areas: "titulo titulo  titulo"
- "section section  section"
- "section section  section";
+    grid-template-areas: "titulo titulo  titulo" "section section  section" "section section  section";
     /* propiedades del H2 y parrafo de nosotros*/ }
     .mainNosotros #divH1 {
       grid-area: titulo; }
@@ -117,21 +251,21 @@
     .mainNosotros .asideNosotros {
       display: none; }
     .mainNosotros #h2Nosotros {
+      font-family: "Open Sans", sans-serif;
       color: #6E2D0F;
+      text-align: center;
       padding: 10px;
       margin: 0px;
-      text-align: center;
       background-color: #F3EFEEe3;
-      font-family: "Open Sans", sans-serif;
       font-weight: bold;
       font-size: 1.2rem; }
     .mainNosotros #idParrafoNosotros {
+      font-family: "Open Sans", sans-serif;
       color: #6E2D0F;
+      text-align: center;
       padding: 10px;
       margin: 0px;
-      text-align: center;
       background-color: #F3EFEEe3;
-      font-family: "Open Sans", sans-serif;
       font-size: 1rem; }
   /* propiedades a la section de contacto*/
   .sContacto {
@@ -144,15 +278,13 @@
       border-radius: 40px;
       /* propiedades legend H2 de contacto*/ }
       .sContacto #form .legendH2 {
+        font-family: "Open Sans", sans-serif;
         color: #6E2D0F;
-        font-size: 1.5rem;
-        padding: 30px;
         text-align: center;
-        font-family: "Open Sans", sans-serif; }
+        font-size: 1.5rem;
+        padding: 30px; }
       .sContacto #form .divFormulario {
         color: #6E2D0F;
-        padding: 10px;
-        margin-left: 10px;
         text-align: justify;
         /* propiedades al lebel del form de contacto*/
         /* propiedades a los input del form de contacto*/
@@ -160,12 +292,15 @@
         .sContacto #form .divFormulario .label {
           font-family: "Open Sans", sans-serif;
           font-weight: bold;
-          width: 250px;
+          width: 100%;
           font-size: 0.8rem; }
+          .sContacto #form .divFormulario .label .labelH3 {
+            font-size: 0.9rem;
+            font-weight: bold; }
         .sContacto #form .divFormulario .input {
           font-family: "Open Sans", sans-serif;
           font-size: 0.8rem;
-          width: 250px;
+          width: 100%;
           padding: 3px 10px;
           border: 1px solid #F3EFEE;
           border-radius: 5px;
@@ -174,7 +309,7 @@
           display: inline-block;
           text-align: center; }
         .sContacto #form .divFormulario .textarea {
-          width: 250px;
+          width: 100%;
           height: 200px;
           border: 1px solid #F3EFEE;
           border-radius: 5px;
@@ -183,6 +318,8 @@
           resize: none;
           text-align: center;
           font-family: "Open Sans", sans-serif;
+          font-size: 0.7rem; }
+        .sContacto #form .divFormulario .inputradio {
           font-size: 0.8rem; }
       .sContacto #form .divFormularioBoton {
         text-align: center; }
@@ -197,17 +334,220 @@
           font-size: 0.7rem;
           font-weight: bold; } }
 
+@media screen and (min-width: 768px) {
+  .textform, .sContacto #form .divFormulario .textarea {
+    width: 50%;
+    border: 0.5px solid #F3EFEE;
+    background-color: #d6d6d6;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    margin: 8px 0; }
+  .mainProducto, .mainPreguntas, .mainNosotros, .mainComun {
+    background-color: #FFFFFF;
+    /* animacion de los titulos y propiedades*/ }
+    .mainProducto div .mainTitulo, .mainPreguntas div .mainTitulo, .mainNosotros div .mainTitulo, .mainComun div .mainTitulo {
+      font-family: "Open Sans", sans-serif;
+      color: #6E2D0F;
+      text-align: center;
+      font-size: 1.4rem;
+      background-image: linear-gradient(#F3EFEE, #dbcbbd);
+      padding: 4px;
+      text-transform: uppercase;
+      animation-name: aparecer;
+      animation-duration: 2s; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  .mainProducto .sProdDest {
+    margin: 20px;
+    padding: 0px;
+    background-color: #F3EFEEe3;
+    /* propiedades al bloque de productos APLICA PARA  PRODUCTOS */ }
+    .mainProducto .sProdDest .divProd2 {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: repeat(4, 4fr);
+      gap: 10px;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      margin: 10px;
+      padding: 10px; }
+      .mainProducto .sProdDest .divProd2 .divProducDest2 {
+        width: 30vh;
+        padding: 10px;
+        overflow: hidden;
+        position: static;
+        /*tamaño de las imagenes*/
+        /*Propiedades al H4  HTML Productos */ }
+        .mainProducto .sProdDest .divProd2 .divProducDest2:hover {
+          transform: scale(1.05); }
+        .mainProducto .sProdDest .divProd2 .divProducDest2 .prodImagen {
+          width: 100%;
+          transition: transform .75s;
+          inset: 0;
+          object-fit: cover; }
+        .mainProducto .sProdDest .divProd2 .divProducDest2 .hDesc {
+          font-family: "Open Sans", sans-serif;
+          color: #6E2D0F;
+          text-align: left;
+          font-size: 1rem;
+          width: 100%;
+          height: 50px;
+          overflow: hidden; }
+  .mainPreguntas .fotosPreguntasF {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .mainPreguntas .fotosPreguntasF div {
+      padding: 7px; }
+      .mainPreguntas .fotosPreguntasF div img {
+        width: 15vh;
+        border-radius: 300px;
+        transition: transform .75s;
+        inset: 0;
+        object-fit: cover;
+        box-shadow: 5px 5px 10px #0c0c0cc4;
+        border: 0px; }
+      .mainPreguntas .fotosPreguntasF div:hover {
+        filter: opacity(0.5); }
+  .mainPreguntas .sNosotros {
+    padding: 30px; }
+    .mainPreguntas .sNosotros .sectionMainOl {
+      text-align: center;
+      list-style: none;
+      background-color: #F3EFEEe3; }
+      .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi {
+        /* H2 de las preguntas frecuentes */
+        /*parrafo de las respuestas de las pregintas frecuentes*/
+        /* lista de las respuestas de preguntas frecuentes*/ }
+        .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .sectionMainH2 {
+          font-family: "Open Sans", sans-serif;
+          color: #6E2D0F;
+          text-align: center;
+          padding-top: 1.5%;
+          font-size: 1.5rem; }
+        .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .sectionMainPar {
+          font-family: "Open Sans", sans-serif;
+          color: #6E2D0F;
+          text-align: center;
+          font-size: 1.2rem;
+          padding: 5px; }
+        .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .ulList {
+          list-style: none;
+          font-family: "Open Sans", sans-serif;
+          color: #6E2D0F;
+          text-align: center;
+          padding: 0;
+          font-size: 0.9rem; }
+  .mainNosotros {
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    grid-template-rows: 0.1fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas: "titulo titulo" "section imagen";
+    /* propiedades del H2 y parrafo de nosotros*/ }
+    .mainNosotros #divH1 {
+      grid-area: titulo; }
+    .mainNosotros .sNosotros {
+      grid-area: section; }
+    .mainNosotros .asideNosotros {
+      grid-area: imagen;
+      margin-top: 0;
+      display: none; }
+    .mainNosotros #h2Nosotros {
+      color: #6E2D0F;
+      padding: 5px;
+      text-align: center;
+      background-color: #F3EFEEe3;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem; }
+    .mainNosotros #idParrafoNosotros {
+      font-family: "Open Sans", sans-serif;
+      color: #6E2D0F;
+      text-align: center;
+      padding: 5px;
+      background-color: #F3EFEEe3;
+      font-size: 1.3rem; }
+  /* propiedades a la section de contacto*/
+  .sContacto {
+    font-family: "Open Sans", sans-serif;
+    padding: 50px;
+    /* propiedades al form de contacto*/ }
+    .sContacto #form {
+      background-color: #F3EFEEe3;
+      padding: 16px;
+      border-radius: 50px;
+      /* propiedades legend H2 de contacto*/ }
+      .sContacto #form .legendH2 {
+        font-family: "Open Sans", sans-serif;
+        color: #6E2D0F;
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 30px; }
+      .sContacto #form .divFormulario {
+        color: #6E2D0F;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* propiedades al lebel del form de contacto*/
+        /* propiedades a los input del form de contacto*/
+        /* propiedades al box de mensaje  del form de contacto*/ }
+        .sContacto #form .divFormulario .label {
+          font-family: "Open Sans", sans-serif;
+          display: inline-block;
+          font-weight: bold;
+          width: 50%;
+          font-size: 1rem; }
+          .sContacto #form .divFormulario .label .labelH3 {
+            font-size: 1rem;
+            font-weight: bold; }
+        .sContacto #form .divFormulario .input {
+          font-family: "Open Sans", sans-serif;
+          font-size: 1rem;
+          width: 50%;
+          padding: 3px 10px;
+          border: 1px solid #F3EFEE;
+          border-radius: 5px;
+          background-color: #d6d6d6;
+          margin: 8px 0;
+          display: inline-block;
+          text-align: center; }
+        .sContacto #form .divFormulario .textarea {
+          height: 200px;
+          border-radius: 5px;
+          resize: none; }
+        .sContacto #form .divFormulario .inputradio {
+          font-size: 1rem; }
+      .sContacto #form .divFormularioBoton {
+        text-align: center; }
+        .sContacto #form .divFormularioBoton input {
+          width: 20%;
+          padding: 8px 16px;
+          margin: 20px;
+          box-shadow: 5px 5px 10px #0c0c0cc4;
+          border-radius: 10px;
+          color: #6E2D0F;
+          background-color: linear-gradient(#F3EFEE, #dbcbbd);
+          font-size: 1rem;
+          font-weight: bold; } }
+
 @media screen and (min-width: 1024px) {
   .mainProducto, .mainPreguntas, .mainNosotros, .mainComun {
     background-color: #FFFFFF;
     /* animacion de los titulos y propiedades*/ }
     .mainProducto div .mainTitulo, .mainPreguntas div .mainTitulo, .mainNosotros div .mainTitulo, .mainComun div .mainTitulo {
       font-family: "Open Sans", sans-serif;
-      font-size: 2.2rem;
       color: #6E2D0F;
       text-align: center;
+      font-size: 2.2rem;
       background-image: linear-gradient(#F3EFEE, #dbcbbd);
-      padding: 1px;
+      padding: 4px;
       text-transform: uppercase;
       animation-name: aparecer;
       animation-duration: 2s; }
@@ -233,8 +573,8 @@
       margin: 10px;
       padding: 10px; }
       .mainProducto .sProdDest .divProd2 .divProducDest2 {
-        width: 60%;
-        padding: 0px;
+        width: 35vh;
+        padding: 10px;
         overflow: hidden;
         position: static;
         /*tamaño de las imagenes*/
@@ -248,12 +588,11 @@
           object-fit: cover; }
         .mainProducto .sProdDest .divProd2 .divProducDest2 .hDesc {
           font-family: "Open Sans", sans-serif;
-          font-size: 1rem;
           color: #6E2D0F;
           text-align: left;
-          width: 225px;
+          font-size: 1rem;
+          width: 100%;
           height: 50px;
-          margin: 10px;
           overflow: hidden; }
   .mainPreguntas .fotosPreguntasF {
     display: flex;
@@ -270,7 +609,7 @@
         box-shadow: 5px 5px 10px #0c0c0cc4;
         border: 0px; }
       .mainPreguntas .fotosPreguntasF div:hover {
-        transform: scale(1.05); }
+        filter: opacity(0.5); }
   .mainPreguntas .sNosotros {
     padding: 50px; }
     .mainPreguntas .sNosotros .sectionMainOl {
@@ -284,8 +623,8 @@
         .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .sectionMainH2 {
           font-family: "Open Sans", sans-serif;
           color: #6E2D0F;
-          padding-top: 2%;
           text-align: center;
+          padding-top: 2%;
           font-size: 2.2rem; }
         .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .sectionMainPar {
           font-family: "Open Sans", sans-serif;
@@ -297,17 +636,17 @@
           list-style: none;
           font-family: "Open Sans", sans-serif;
           color: #6E2D0F;
-          padding: 0;
           text-align: center;
+          padding: 0;
           font-size: 1.5rem; }
   .mainNosotros {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1.8fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.1fr 3fr;
     gap: 0px 0px;
-    grid-template-areas: "titulo titulo  titulo"
- "section section  imagen"
- "section section  imagen";
+    align-items: center;
+    align-content: center;
+    grid-template-areas: "titulo   titulo" "section   imagen" "section   imagen";
     /* propiedades del H2 y parrafo de nosotros*/ }
     .mainNosotros #divH1 {
       grid-area: titulo; }
@@ -315,23 +654,27 @@
       grid-area: section; }
     .mainNosotros .asideNosotros {
       grid-area: imagen;
-      margin-top: 0;
-      display: inline; }
+      display: inline;
+      padding: 5px; }
     .mainNosotros .asideNosotros img {
-      width: 100%; }
+      width: 60%; }
+      .mainNosotros .asideNosotros img:hover {
+        border-radius: 50%;
+        box-shadow: 0px 150px 100px -100px #6E2D0F;
+        transform: rotate(360deg); }
     .mainNosotros #h2Nosotros {
-      color: #6E2D0F;
-      padding: 20px;
-      text-align: center;
-      background-color: #F3EFEEe3;
       font-family: "Open Sans", sans-serif;
-      font-size: 2.2rem; }
+      color: #6E2D0F;
+      text-align: center;
+      padding: 5px;
+      background-color: #F3EFEEe3;
+      font-size: 2rem; }
     .mainNosotros #idParrafoNosotros {
-      color: #6E2D0F;
-      padding: 39px 200px;
-      text-align: center;
-      background-color: #F3EFEEe3;
       font-family: "Open Sans", sans-serif;
+      color: #6E2D0F;
+      text-align: center;
+      padding: 30px;
+      background-color: #F3EFEEe3;
       font-size: 1.5rem; }
   /* propiedades a la section de contacto*/
   .sContacto {
@@ -344,16 +687,17 @@
       border-radius: 50px;
       /* propiedades legend H2 de contacto*/ }
       .sContacto #form .legendH2 {
+        font-family: "Open Sans", sans-serif;
         color: #6E2D0F;
-        font-size: 2.2rem;
-        padding: 30px;
         text-align: center;
-        font-family: "Open Sans", sans-serif; }
+        font-size: 2.1rem;
+        padding: 30px; }
       .sContacto #form .divFormulario {
         color: #6E2D0F;
         padding: 10px;
-        margin-left: 10px;
-        text-align: justify;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
         /* propiedades al lebel del form de contacto*/
         /* propiedades a los input del form de contacto*/
         /* propiedades al box de mensaje  del form de contacto*/ }
@@ -361,12 +705,12 @@
           font-family: "Open Sans", sans-serif;
           display: inline-block;
           font-weight: bold;
-          width: 500px;
+          width: 50%;
           font-size: 1rem; }
         .sContacto #form .divFormulario .input {
           font-family: "Open Sans", sans-serif;
           font-size: 1rem;
-          width: 500px;
+          width: 50%;
           padding: 3px 10px;
           border: 1px solid #F3EFEE;
           border-radius: 5px;
@@ -375,7 +719,7 @@
           display: inline-block;
           text-align: center; }
         .sContacto #form .divFormulario .textarea {
-          width: 500px;
+          width: 50%;
           height: 200px;
           border: 1px solid #F3EFEE;
           border-radius: 5px;
@@ -385,6 +729,9 @@
           text-align: center;
           font-family: "Open Sans", sans-serif;
           font-size: 1rem; }
+        .sContacto #form .divFormulario .inputradio {
+          font-size: 1rem;
+          width: 16%; }
       .sContacto #form .divFormularioBoton {
         text-align: center; }
         .sContacto #form .divFormularioBoton input {

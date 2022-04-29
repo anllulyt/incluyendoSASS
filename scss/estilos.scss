@@ -1,6 +1,10 @@
 // importo variables
 @import "utilities/variables";
+@import "utilities/procesadores";
+@import "layout/estilo-booystrap";
 @import "layout/mediaquery";
+
+
 
 
 *{
@@ -10,4 +14,6 @@
         background-color: $color-body;
     }
 }
+
+   
 

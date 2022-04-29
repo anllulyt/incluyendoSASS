@@ -1,9 +1,10 @@
 $color-oscuro: #6E2D0F;
 $color-claro: #F3EFEE;
 $color-claro-transparente: #F3EFEEe3;
-$color-degradado:linear-gradient(#F3EFEE,#dbcbbd);
+$color-degradado:linear-gradient(#F3EFEE,#dbcbbd),linear-gradient(to right, #F3EFEEe3, #dbcbbd);
 $color-body:#FFFFFF; 
 $color-negro:#000000;
 $color-negro-transparente:#0c0c0cc4;
-$color-input:#d6d6d6;
+$color-input:#d6d6d6; 
+$color-icono-carrucel: #a69a90;
 $fuente-principal:'Open Sans', sans-serif;

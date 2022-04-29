@@ -1,0 +1,202 @@
+/* estilo para el index que se encuentra todo cn bootstrap */
+
+.menu-header{
+    background-color: $color-claro;
+    #navbarSupportedContent{
+        .navbar-nav{
+            .nav-item{
+                    text-decoration: none;     
+                    text-transform: uppercase;
+                    background-image: nth($color-degradado,2);
+                    background-repeat: no-repeat;
+                    background-size: 0% 100%;
+                    background-position-x: right;
+                    transition: background-size 500ms;
+                    padding: 5px 5px; 
+                    &:hover{
+                        background-size: 100% 100%;
+                        background-position-x: left;              
+                }
+                .navbar-color{
+                    color: $color-oscuro !important;
+                }
+            }
+        }
+    }
+        
+}
+
+.main-index{
+
+    div{
+        .estilo-text-h1, .estilo-text-h2 {
+            background-color: $color-claro;
+            color: $color-oscuro;
+            background-image: nth($color-degradado,1)
+        }
+    }
+
+    .color-info-main{
+        background-color: $color-claro;
+        color: $color-oscuro;
+    }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+        background-color:  map-get($map: $colores, $key: color_carrousel ); 
+        border-radius: 50%; 
+        }
+
+    
+
+    /*tamaño de las imagenes*/
+    .transforma-imagen{
+        transition: transform .75s;
+        inset: 0;
+        object-fit: cover;
+    }
+    .estilo-imagen-producto:hover{
+        transform: scale(1.05);
+    }
+
+}
+
+.footer-general{
+    .div-footer{
+        background-color: $color-claro;
+        .div-contacto{
+            .estilo-contacto{
+                color: $color-oscuro;
+            }
+            .estilo-text-h3{
+                font-size: 1rem;
+            }
+            .estilo-p-telefono,
+            .estilo-p-direccion{
+                font-size: $medida-fuente-media - 0.3;
+            }
+            .estilo-a-mail{
+                font-size: $medida-fuente-media - 0.3;
+                color: $color-oscuro !important;
+                text-decoration: none;
+            }
+        }
+        .div_redes{
+            .estilo-a-imagen-footer{
+                text-decoration: none;
+            }
+        }
+        .div-derechos{
+            .estilo-text-h4{
+                background-color: $color-claro;
+                color: $color-oscuro;
+                font-size: $medida-fuente-media - 0.3;
+                background-image: nth($color-degradado,1)
+            }
+        }
+        
+    }
+}
+
+
+/*media query */
+@media screen and (min-width: 320px)  {
+    .main-index{
+        /* aparecer del titulo de bienvenida */
+        .estilo-titulo-index{
+            @include fuenteColorAling(center);
+            font-size:$medida-fuente-media + 0.4;
+            background-image: nth($color-degradado,1);
+            padding: 4px;
+            text-transform: uppercase;
+            animation-name: aparecer;
+            animation-duration: 2s;
+        } 
+        @keyframes aparecer {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .estilo-imagen-producto{
+            width: 8rem;
+        }
+        .card-title, .card-text{
+            font-size: $medida-fuente-media - 0.3;
+        }
+
+        .img-info{
+            width: 4rem;
+        }
+        
+    }
+}
+
+/*media query */
+@media  screen and (min-width: 768px) {
+    .main-index{
+        /* aparecer del titulo de bienvenida */
+        .estilo-titulo-index{
+            @include fuenteColorAling(center);
+            font-size:$medida-fuente-media + 1;
+            background-image: nth($color-degradado,1);
+            padding: 4px;
+            text-transform: uppercase;
+            animation-name: aparecer;
+            animation-duration: 2s;
+        } 
+        @keyframes aparecer {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .estilo-imagen-producto{
+            width: 12rem;
+        }
+        .card-title, .card-text{
+            font-size: 1rem;
+        }
+
+        .img-info{
+            width: 6rem;
+        }
+        
+    }
+}
+/*media query */
+@media  screen and (min-width: 1024px){
+    .main-index{
+            /* aparecer del titulo de bienvenida */
+        .estilo-titulo-index{
+            @include fuenteColorAling(center);
+            font-size:$medida-fuente-media + 1.2;
+            background-image: nth($color-degradado,1);
+            padding: 1px;
+            text-transform: uppercase;
+            animation-name: aparecer;
+            animation-duration: 2s;
+        } 
+        @keyframes aparecer {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .estilo-imagen-producto{
+            width: 18rem;
+        }
+        .card-title, .card-text{
+            font-size: 1rem;
+        }
+
+        .img-info{
+            width: 6rem;
+        }
+        
+    }
+}
