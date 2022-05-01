@@ -1,25 +1,30 @@
 @import "utilities/variables";
 
 $medida-fuente-media:1rem;
-@mixin fuenteColorAling ($textAling){
-    @if $textAling == center {
+
+@mixin fuenteColorAling ($textAling) {
+    @if $textAling==center {
         font-family: $fuente-principal;
         color: $color-oscuro;
         text-align: center;
     }
-    @else{
+
+    @else {
         font-family: $fuente-principal;
         color: $color-oscuro;
         text-align: left;
     }
-};
+}
+
+;
+
 @mixin flex ($j-content) {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: $j-content;
-};
+}
 
-$colores:( 
-    color_carrousel : $color-icono-carrucel,
-    color_input: $color-input
-);
+;
+
+$colores:(color_carrousel : $color-icono-carrucel,
+    color_input: $color-input);

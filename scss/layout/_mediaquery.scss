@@ -1,6 +1,16 @@
-
 /*media query */
 @media screen and (min-width: 320px) {
+     /*declaro el extend*/
+    %textform_320{
+        width:100%;  
+        border:0.5px solid $color-claro;
+        background-color:map-get($map: $colores, $key: color_input );
+        text-align:center;
+        font-family: $fuente-principal;
+        font-size:$medida-fuente-media - 0.2;
+        margin:5px 0;
+        border-radius:5px;
+    }
     .mainProducto, .mainPreguntas, .mainNosotros, .mainComun {
         background-color: $color-body;
         /* animacion de los titulos y propiedades*/
@@ -187,33 +197,16 @@
                 }
                 /* propiedades a los input del form de contacto*/
                 .input{
-                    font-family: $fuente-principal;
-                    font-size:$medida-fuente-media - 0.2;
-                    width:100%;
+                    @extend %textform_320;
                     padding:3px 10px;
-                    border:1px solid $color-claro;
-                    border-radius:5px;
-                    background-color:  map-get($map: $colores, $key: color_input );
-                    margin:8px 0;
                     display:inline-block;
-                    text-align:center;
                 }
                 /* propiedades al box de mensaje  del form de contacto*/
                 .textarea{
-                    width:100%;
+                    @extend %textform_320;
                     height:200px;
-                    border:1px solid $color-claro;
-                    border-radius:5px;
-                    background-color:$color-input;			
-                    margin:5px 0px; 
                     resize:none;
-                    text-align:center;
-                    font-family: $fuente-principal;
-                    font-size:$medida-fuente-media - 0.3;
                 }    
-                .inputradio{
-                    font-size: $medida-fuente-media - 0.2;
-                } 
            } 
            .divFormularioBoton {
                 text-align: center;
@@ -233,15 +226,17 @@
     }
 }
 @media  screen and (min-width: 768px){
-    .textform{
+     /*declaro el extend*/
+    %textform{
         width:50%;  
         border:0.5px solid $color-claro;
-        background-color:$color-input;
+        background-color:map-get($map: $colores, $key: color_input );
         text-align:center;
         font-family: $fuente-principal;
         font-size:$medida-fuente-media;
         margin:8px 0;
-    };
+        border-radius:5px;
+};
     .mainProducto, .mainPreguntas, .mainNosotros, .mainComun {
         background-color: $color-body;
         /* animacion de los titulos y propiedades*/
@@ -429,27 +424,16 @@
                 }
                 /* propiedades a los input del form de contacto*/
                 .input{
-                        font-family: $fuente-principal;
-						font-size:$medida-fuente-media;
-						width:50%;
-						padding:3px 10px;
-						border:1px solid $color-claro;
-						border-radius:5px;
-						background-color:  map-get($map: $colores, $key: color_input );;
-						margin:8px 0;
-						display:inline-block;
-						text-align:center;
+                    @extend %textform;
+                    padding:3px 10px;
+                    display:inline-block;
                 }
                 .textarea{
-                    @extend .textform;
-                    height:200px;
-                    border-radius:5px;		
+                    @extend %textform;
+                    height:200px;	
                     resize:none;
                     }  
                 /* propiedades al box de mensaje  del form de contacto*/
-                .inputradio{
-                    font-size: $medida-fuente-media;
-                } 
            } 
            .divFormularioBoton { 
                 text-align: center;
@@ -471,6 +455,17 @@
 
 }
 @media  screen and (min-width: 1024px){
+    /*declaro el extend*/
+    %textform_escritorio{
+        width:50%;  
+        border:1px solid $color-claro;
+        background-color:map-get($map: $colores, $key: color_input );
+        text-align:center;
+        font-family: $fuente-principal;
+        font-size:$medida-fuente-media;
+        margin:8px 0;
+        border-radius:5px;
+    };
     .mainProducto, .mainPreguntas, .mainNosotros, .mainComun {
         background-color: $color-body;
         /* animacion de los titulos y propiedades*/
@@ -666,34 +661,17 @@
                 }
                 /* propiedades a los input del form de contacto*/
                 .input{
-                        font-family: $fuente-principal;
-						font-size:$medida-fuente-media;
-						width:50%;
-						padding:3px 10px;
-						border:1px solid $color-claro;
-						border-radius:5px;
-						background-color:  map-get($map: $colores, $key: color_input );
-						margin:8px 0;
-						display:inline-block;
-						text-align:center;
+                    @extend  %textform_escritorio;
+                    padding:3px 10px;
+                    display:inline-block;
                 }
                 /* propiedades al box de mensaje  del form de contacto*/
                 .textarea{
-                    	width:50%;
+                        @extend  %textform_escritorio;
 						height:200px;
-						border:1px solid $color-claro;
-						border-radius:5px;
-						background-color:$color-input;			
-						margin:8px 0;
 						resize:none;
-						text-align:center;
-						font-family: $fuente-principal;
-						font-size:$medida-fuente-media;
-                }   
-                .inputradio{
-                    font-size: $medida-fuente-media;
-                    width: 16%;
-                }  
+
+                }    
            } 
            
            .divFormularioBoton { 
