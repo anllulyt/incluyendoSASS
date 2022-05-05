@@ -2,6 +2,8 @@
 
 .menu-header {
     background-color: $color-claro;
+    margin: 0;
+    z-index: 1000;
 
     #navbarSupportedContent {
         .navbar-nav {

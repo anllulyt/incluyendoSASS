@@ -1,7 +1,9 @@
 @charset "UTF-8";
 /* estilo para el index que se encuentra todo cn bootstrap */
 .menu-header {
-  background-color: #F3EFEE; }
+  background-color: #F3EFEE;
+  margin: 0;
+  z-index: 1000; }
   .menu-header #navbarSupportedContent .navbar-nav .nav-item {
     text-decoration: none;
     text-transform: uppercase;
